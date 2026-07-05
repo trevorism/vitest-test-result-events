@@ -19,7 +19,7 @@ export default defineConfig({
 })
 ```
 
-`<service name>` is the repository name (the `source` of the `TestSuite`), e.g. `health-dash`.
+`<service name>` is the repository name (the `source` of the `TestSuite`).
 
 Reporting is **off by default** and only fires when the environment variable
 `TREVORISM_TEST_EVENT=enabled` is set — so local `vitest run` stays quiet and only CI reports.
@@ -41,5 +41,6 @@ The event posted to `https://event.data.trevorism.com/event/testResult` is:
 ```
 npm install
 npm run build
+npm run test
 npm run accept
 ```
