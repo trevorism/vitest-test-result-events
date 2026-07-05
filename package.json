@@ -1,0 +1,32 @@
+{
+  "name": "@trevorism/vitest-test-result-events",
+  "version": "1.0.0",
+  "description": "Vitest reporter to send a Trevorism testResult event",
+  "type": "commonjs",
+  "scripts": {
+    "build": "vite build",
+    "accept": "vitest run",
+    "dev": "vite",
+    "test": "vitest",
+    "format": "prettier --write ./src/*.js"
+  },
+  "main": "./dist/vitest-test-result-events.umd.js",
+  "module": "./dist/vitest-test-result-events.es.js",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "prettier": "^3.9.4",
+    "sinon": "^22.0.0",
+    "vite": "^8.1.3",
+    "vitest": "^4.1.9"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trevorism/vitest-test-result-events.git"
+  },
+  "dependencies": {
+    "axios": "^1.18.1"
+  }
+}
